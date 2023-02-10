@@ -11,25 +11,30 @@ public class Exc3_if {
 		String nome;
 		boolean primeira;
 
-		System.out.println("digite o nome: ");
+		System.out.println("Digite o nome: ");
 		leia.skip("\\R?");
 		nome = leia.nextLine();
 
-		System.out.println("digite a idade: ");
+		System.out.println("Digite a idade: ");
 		leia.skip("\\R?");
 		idade = leia.nextInt();
 
-		System.out.println("primeira doação: ");
+		System.out.println("É a  primeira doação? ");
 		leia.skip("\\R?");
 		primeira = leia.nextBoolean();
 
 		if (idade >= 60 && idade <= 69) {
-			if (primeira)
-				System.out.println("não esta apto para doar: ");
-			else
-				System.out.println("Não esta apto a doar:");
-		} else {
+			if (primeira) {
+				System.out.println(nome + " Não está apto a doar! ");
+			} else {
+				System.out.println(nome + " Está apto a doar! ");
+			}
+		} else if (idade >= 18 && idade < 60) {
+			System.out.println(nome + " Está apto a doar! ");
 
+		} else {
+			System.out.println(nome + " Não Está apto a doar! ");
 		}
+		leia.close();
 	}
 }

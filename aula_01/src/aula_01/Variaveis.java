@@ -28,5 +28,8 @@ public class Variaveis {
 		System.out.printf("O numero é: %.2f\n", area);
 		
 		System.out.println("A area é: " + df.format(area));
+	
+		leia.close();
 	}
+	
 }

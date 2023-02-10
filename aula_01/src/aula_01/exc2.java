@@ -17,6 +17,11 @@ public class exc2 {
 		n4 = sc.nextFloat();
 		media = (n1 + n2 + n3 + n4) /4;
 		System.out.printf("A media do aluno é : %.1f", media);
+	
+		sc.close();
+	
 	}
+	
+	
 
 }

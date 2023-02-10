@@ -19,6 +19,7 @@ public class exc4 {
 		diferenca = (n1 * n2)-(n3 * n4);
 		System.out.println("A diferença é :" + diferenca);
 		
+		sc.close();
 		
 	}
 

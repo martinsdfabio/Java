@@ -59,7 +59,7 @@ public class Exc2_Switch {
 			System.out.printf("Salario: R$ %.2f ", salarioLiquido);
 			break;
 		}
-
+		sc.close();
 	}
 
 }

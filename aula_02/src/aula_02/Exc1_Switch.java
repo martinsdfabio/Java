@@ -47,5 +47,6 @@ public class Exc1_Switch {
 			System.out.printf("Valor total: R$ %.2f", calculoTotal);
 			break;
 		}
+		sc.close();
 	}
 }

@@ -49,6 +49,7 @@ public class Exc4_if {
 					System.out.println("minhoca");
 			}
 		}
+		leia.close();
 	}
 
 }
