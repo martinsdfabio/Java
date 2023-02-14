@@ -41,6 +41,8 @@ public class Exc2_while {
 	System.out.println("\nTotal de pessoas desenvolvedoras Frontand: " + frontend);
 	System.out.println("\nTotal de pessoas desenvolvedoras Mobile: " + mobile);
 	System.out.println("\nTotal de pessoas desenvolvedoras FullStack: " + full);
+	
+	sc.close();
 	}
 
 }
