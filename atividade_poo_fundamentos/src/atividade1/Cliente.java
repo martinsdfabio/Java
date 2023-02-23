@@ -1,20 +1,22 @@
 package atividade1;
 
-public class Cliente {
+public abstract class Cliente {
 	
 	private String nome;
 	private String telefone;
-	private String cpf;
+	private Integer idade;
 	private String email;
 	private String endereco;
+	private Integer tipo;
 	
-	public Cliente(String nome, String telefone, String cpf, String email, String endereco) {
+	public Cliente(String nome, String telefone, Integer idade, String email, String endereco, Integer tipo) {
      //(o meu = o que o cliente digitou)
 		this.nome = nome;
 		this.telefone = telefone;
-		this.cpf = cpf;
+		this.idade = idade;
 		this.email = email;
 		this.endereco = endereco;
+		this.tipo = tipo;
 	}
 	
 	public String getNome() {
@@ -34,16 +36,18 @@ public class Cliente {
 	
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+		
 	}
 	
-	public String getCpf() {
-		return cpf;
+	public Integer getIdade() {
+		return idade;
 	}
-	
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
 	}
-	
+
+
 	public String getEmail() {
 		return email;
 	}
@@ -62,10 +66,17 @@ public class Cliente {
 	
 	public void visualizar() {
 		
+		String tipo = "";
+		switch(this.tipo){
+			case 1 -> System.out.println("Pessoa Fisica: ");
+			case 2 -> System.out.println("Pessoa Juridica: ");
+		}
+		
 		System.out.println("Nome: " + nome);
 		System.out.println("Telefone: " + telefone);
-		System.out.println("CPF: " + cpf);
-		System.out.println("Endereco: " + endereco);
+		System.out.println("Idade: " + idade);
 		System.out.println("E-mail: " + email);
+		System.out.println("Endereco: " + endereco);
+		System.out.println("Tipo: " + tipo);
 	}
 }
