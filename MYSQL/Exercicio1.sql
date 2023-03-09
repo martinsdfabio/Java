@@ -1,7 +1,5 @@
--- comando para criação de banco de dados
 CREATE DATABASE db_empresa;
 
--- comando que indica ao mysql qual banco de dados usar
 USE db_empresa;
 
 CREATE TABLE tb_funcionarios(
@@ -15,7 +13,6 @@ CREATE TABLE tb_funcionarios(
 	PRIMARY KEY(id)
 );
 
--- comando que tras todos os dados da tabela de produtos
 SELECT * FROM tb_funcionarios WHERE salario > 2000.00;
 SELECT * FROM tb_funcionarios WHERE salario < 2000.00;
 
